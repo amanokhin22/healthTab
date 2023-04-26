@@ -1,0 +1,872 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    display: block;
+}
+
+.wrapper {
+    margin: 0;
+}
+
+.main {
+    position: relative;
+    z-index: 2;
+    display: block;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section {
+    margin: 0 0 50px 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.imageTopWrapper {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    background: url('/images/blueMap.png') no-repeat;
+    margin-bottom: 50px;
+    background-size: cover;
+    display: flex;
+    align-items: stretch;
+}
+
+.topIcon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    height: 134px;
+    background: #040F85;
+    border: 6px solid #FFFFFF;
+    align-items: center;
+    margin-top: 45px;
+    padding: 0;
+}
+
+.vectorTl {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -26px;
+    top: -29px;
+    background-image: url("/images/vectorTL.svg");
+    margin: 0;
+}
+
+.vectorBL {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -26px;
+    top: 115px;
+    background-image: url("/images/vectorBL.svg");
+    margin: 0;
+}
+
+.vectorTR {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 365px;
+    top: -26px;
+    background-image: url("/images/vectorTR.svg");
+    margin: 0;
+}
+
+.vectorBR {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 365px;
+    top: 115px;
+    background-image: url("/images/vectorBR.svg");
+    margin: 0;
+}
+
+.textTopIcon {
+    width: 251px;
+    height: 118px;
+    left: 155px;
+    top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.textTopIconYellow {
+    width: 251px;
+    height: 118px;
+    left: 155px;
+    top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 230, 0, 1);
+    margin: 0;
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    gap: 9px;
+    left: 0;
+    bottom: 20px;
+}
+
+.text {
+    position: relative;
+    width: 197px;
+    height: 59px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.yellowText {
+    position: relative;
+    width: 206px;
+    height: 59px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #040F85;
+    background: #FFE500;
+    margin: 0;
+}
+
+.leading {
+    position: absolute;
+    width: 774px;
+    height: 519px;
+    right: -225px;
+    bottom: -68px;
+    background: url('/images/leading.png');
+}
+
+.topTitle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.topArticle {
+    max-width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 35px;
+    color: #FF0000;
+    margin: 0;
+    text-align: left;
+}
+
+.authorDate {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: end;
+}
+
+.author {
+    position: relative;
+    width: 317px;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #858585;
+    margin: 0;
+}
+
+.date {
+    position: relative;
+    width: 293px;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #858585;
+    margin: 0;
+}
+
+.standardText {
+    max-width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #222222;
+    margin: 0 0 50px 0;
+    text-align: left;
+}
+
+.conspiracy {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.conspiracyText {
+    max-width: 1024px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    color: #222222;
+    margin: 0;
+    text-align: justify;
+}
+
+.secondImage {
+    position: relative;
+    width: 1024px;
+    height: 645px;
+    background: url('/images/presenter.png') no-repeat;
+    text-align: left;
+}
+
+.conspiracyRedText {
+    max-width: 1024px;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FF0000;
+    text-align: left;
+    margin: 0;
+}
+
+.thirdImage {
+    position: relative;
+    width: 1024px;
+    height: 645px;
+    background: url('/images/thirdImage.png') no-repeat;
+}
+
+.fourthImage {
+    position: relative;
+    width: 1024px;
+    height: 645px;
+    background: url('/images/fourthPage.png') no-repeat;
+}
+
+.fifthImage {
+    position: relative;
+    width: 1024px;
+    height: 645px;
+    background: url('/images/fifthImage.png') no-repeat;
+}
+
+.sixthImage {
+    position: relative;
+    width: 693px;
+    height: 375px;
+    background: url('/images/avocardine.png') no-repeat;
+}
+
+.bottomFirstText {
+    max-width: 1024px;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 35px;
+    color: #222222;
+    text-align: justify;
+    margin: 0;
+}
+
+.bottomRedText {
+    max-width: 1024px;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 35px;
+    color: #FF0000;
+    text-align: justify;
+    margin: 0;
+}
+
+.application {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #F5F3F0;
+    width: 627px;
+    height: 616px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.formTitle {
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 100%;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.accent {
+    color: #C1ABF7;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: Gilroy, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.formSubTitle {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 100%;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.FormInputStyled {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: rgb(92, 92, 92);
+    margin-bottom: 16px;
+    position: relative;
+    text-align: left;
+}
+
+.formInput {
+    width: 100%;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 14px 16px;
+    background: #fff;
+    border: 1px solid rgb(243, 244, 245);
+    font-family: Montserrat, sans-serif;
+    color: rgb(33, 33, 33);
+    outline: none;
+    margin: 8px 0 0;
+    font-weight: 400;
+    overflow: visible;
+}
+
+.bottomForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formButton {
+    font-size: 20px;
+    line-height: 25px;
+    width: 300px;
+    height: 56px;
+    display: block;
+    position: relative;
+    background: #0299FF;
+    border-radius: 18px;
+    padding: 0;
+    margin: 0 auto;
+    font-family: Gilroy, sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    transition: all 0.3s ease 0s;
+    animation: 0s ease 0s 1 normal none running none;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+}
+
+.formButton:hover {
+    background: #024572;
+}
+
+.formBottomSpan {
+    text-align: center;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@media screen and (min-width: 992px) {
+
+    .topIcon {
+        width: 300px;
+        height: auto;
+        margin-top: 45px;
+    }
+
+    .vectorBL {
+        top: 70px;
+    }
+
+    .vectorTR {
+        left: 285px;
+        top: -29px;
+    }
+
+    .vectorBR {
+        left: 285px;
+        top: 70px;
+    }
+
+    .textTopIcon {
+        width: 251px;
+        height: auto;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .textTopIconYellow {
+        width: 251px;
+        height: auto;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .text {
+        width: 197px;
+        height: auto;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .yellowText {
+        width: 206px;
+        height: auto;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .leading {
+        position: absolute;
+        width: 774px;
+        height: 519px;
+        right: -175px;
+        bottom: -68px;
+        background: url('/images/leading.png');
+    }
+
+    .standardText {
+        font-size: 28px;
+        line-height: 32px;
+        text-align: justify;
+    }
+
+    .conspiracyText {
+        max-width: 100%;
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .secondImage {
+        max-width: 100%;
+        background-size: 100%;
+    }
+
+    .conspiracyRedText {
+        max-width: 100%;
+        font-size: 23px;
+        text-align: justify;
+    }
+
+    .thirdImage {
+        max-width: 100%;
+        background-size: 100%;
+    }
+
+    .fourthImage {
+        max-width: 100%;
+        background-size: 100%;
+    }
+
+    .fifthImage {
+        max-width: 100%;
+        background-size: 100%;
+    }
+
+    .sixthImage {
+        max-width: 100%;
+        background-size: 100%;
+    }
+
+    .bottomFirstText {
+        max-width: 100%;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .bottomRedText {
+        max-width: 100%;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .topIcon {
+        width: 300px;
+        height: auto;
+        margin-top: 45px;
+    }
+
+    .vectorBL {
+        top: 70px;
+    }
+
+    .vectorTR {
+        left: 285px;
+        top: -29px;
+    }
+
+    .vectorBR {
+        left: 285px;
+        top: 70px;
+    }
+
+    .textTopIcon {
+        width: 251px;
+        height: auto;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .textTopIconYellow {
+        width: 251px;
+        height: auto;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .text {
+        width: 197px;
+        height: auto;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .yellowText {
+        width: 206px;
+        height: auto;
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .leading {
+        position: absolute;
+        width: 774px;
+        height: 519px;
+        right: -175px;
+        bottom: -68px;
+        background: url('/images/leading.png');
+        display: block;
+    }
+
+    .topTitle {
+        gap: 10px;
+    }
+
+    .topArticle {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .standardText {
+        font-size: 23px;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    .post {
+        max-width: 100%;
+    }
+
+    .conspiracyText {
+        max-width: 100%;
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .secondImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 435px;
+    }
+
+    .conspiracyRedText {
+        max-width: 100%;
+        font-size: 23px;
+        text-align: justify;
+    }
+
+    .thirdImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 435px;
+    }
+
+    .fourthImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 435px;
+    }
+
+    .fifthImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 435px;
+    }
+
+    .sixthImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 435px;
+    }
+
+    .bottomFirstText {
+        max-width: 100%;
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .bottomRedText {
+        max-width: 100%;
+        font-size: 23px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .topIcon {
+        width: 300px;
+        height: auto;
+        margin: 100px;
+    }
+
+    .vectorBL {
+        top: 70px;
+    }
+
+    .vectorTR {
+        left: 285px;
+        top: -29px;
+    }
+
+    .vectorBR {
+        left: 285px;
+        top: 70px;
+    }
+
+    .textTopIcon {
+        width: 251px;
+        height: auto;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .textTopIconYellow {
+        width: 251px;
+        height: auto;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .textWrapper {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        margin: 0 100px 50px 150px;
+        left: unset;
+        bottom: unset;
+    }
+
+    .text {
+        width: 197px;
+        height: auto;
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .yellowText {
+        width: 120px;
+        height: auto;
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .leading {
+        display: none;
+    }
+
+    .topTitle {
+        gap: 10px;
+    }
+
+    .topArticle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .author {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .date {
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .standardText {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    .conspiracyText {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .secondImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 320px;
+    }
+
+    .conspiracyRedText {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: justify;
+    }
+
+    .thirdImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 320px;
+    }
+
+    .fourthImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 320px;
+    }
+
+    .fifthImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 320px;
+    }
+
+    .sixthImage {
+        max-width: 100%;
+        background-size: 100%;
+        height: 320px;
+    }
+
+    .bottomFirstText {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .bottomRedText {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .application {
+        max-width: 100%;
+    }
+
+    .FormInputStyled {
+        margin-bottom: 10px;
+    }
+}
